@@ -1,7 +1,12 @@
+import { Button } from "./components/Button";
+
 export function App() {
   return (
-    <div>
-      <h1>Hello React</h1>
-    </div>
+    <>
+      <Button variant={"primary"} />
+      <Button variant={"secondary"} />
+      <Button variant={"sucess"} />
+      <Button variant={"danger"} />
+    </>
   );
 }
