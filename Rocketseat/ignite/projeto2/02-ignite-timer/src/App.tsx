@@ -1,7 +1,16 @@
+import { ThemeProvider } from "styled-components";
+import { defaultTheme } from "./styles/themes/default";
+import { Button } from "./components/Button";
+import { GlobalStyle } from "./styles/global";
+
 export function App() {
   return (
-    <div>
-      <h1>Hello React</h1>
-    </div>
+    <ThemeProvider theme={defaultTheme}>
+      <Button variant={"primary"} />
+      <Button variant={"secondary"} />
+      <Button variant={"sucess"} />
+      <Button variant={"danger"} />
+      <GlobalStyle />
+    </ThemeProvider>
   );
 }
